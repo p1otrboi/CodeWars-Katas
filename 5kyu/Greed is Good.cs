@@ -30,6 +30,7 @@ namespace CodeWars_Katas._5kyu
         public static int Score(int[] dice)
         {
             // Fill me in!
+            return 0;
         }
     }
 }
