@@ -48,7 +48,6 @@ namespace CodeWars_Katas._6kyu
             string decryptedText = encryptedText;
             var jämna = new char[encryptedText.Length];
             var ojämna = new char[encryptedText.Length];
-            Console.WriteLine(encryptedText.Length);
 
             for (int i = 0; i < n; i++)
             {
