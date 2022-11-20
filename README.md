@@ -6,4 +6,4 @@ The sole purpose of this repo is to keep track of my work, come up with your own
 
 www.codewars.com
 
-<a href="https://www.codewars.com/users/p1otrboi><img src="https://www.codewars.com/users/p1otrboi/badges/large"></a>
+<a href="https://www.codewars.com/users/p1otrboi"><img src="https://www.codewars.com/users/p1otrboi/badges/large"></a>
