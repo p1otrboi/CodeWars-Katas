@@ -56,32 +56,14 @@ namespace CodeWars_Katas._4kyu
 
             if (seconds == 0) return "now";
 
-            if (list.Count == 1)
-            {
-                return list[0];
-            }
+            if (list.Count == 1) return list[0];
 
-            if (list.Count == 2)
-            {
-                return String.Join(" and ", list.ToArray());
-            }
+            if (list.Count == 2) return String.Join(" and ", list.ToArray());
 
-            if (list.Count == 3)
+            if (list.Count >= 3)
             {
-                sb.Append(String.Join(", ", list[0], list[1]));
-                sb.Append($" and {list[2]}");
-            }
-
-            if (list.Count == 4)
-            {
-                sb.Append(String.Join(", ", list[0], list[1], list[2]));
-                sb.Append($" and {list[3]}");
-            }
-
-            if (list.Count == 5)
-            {
-                sb.Append(String.Join(", ", list[0], list[1], list[2], list[3]));
-                sb.Append($" and {list[4]}");
+                sb.Append(String.Join(", ", list.SkipLast(1).ToArray()));
+                sb.Append($" and {list.Last()}");
             }
             return sb.ToString();
         }
