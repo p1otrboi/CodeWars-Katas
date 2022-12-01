@@ -37,7 +37,7 @@ namespace CodeWars_Katas._8kyu
         public static string Greet(string language)
         {
 
-            var dict = new Dictionary<string, string>() 
+            var dict = new Dictionary<string, string>()
             {
           {"english", "Welcome"},
           {"czech", "Vitejte"},
