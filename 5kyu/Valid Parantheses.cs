@@ -15,23 +15,22 @@
 //not contain any parentheses at all. Do not treat other forms of brackets as
 //parentheses (e.g. [], { }, <>).
 
-namespace CodeWars_Katas._5kyu
+namespace CodeWars_Katas._5kyu;
+
+internal class Valid_Parantheses
 {
-    internal class Valid_Parantheses
+    public static bool ValidParentheses(string input)
     {
-        public static bool ValidParentheses(string input)
+        int open = 0;
+        foreach (char c in input)
         {
-            int open = 0;
-            foreach (char c in input)
-            {
-                if (open == -1)
-                    return false;
-                if (c == '(')
-                    open++;
-                if (c == ')')
-                    open--;
-            }
-            return open == 0;
+            if (open == -1)
+                return false;
+            if (c == '(')
+                open++;
+            if (c == ')')
+                open--;
         }
+        return open == 0;
     }
 }
